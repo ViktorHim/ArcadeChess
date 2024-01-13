@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,14 +16,19 @@ using System.Windows.Shapes;
 
 namespace ArcadeChess
 {
-    /// <summary>
-    /// Логика взаимодействия для Game.xaml
-    /// </summary>
+
     public partial class Game : Page
     {
         public Game()
         {
             InitializeComponent();
+            //ChessBoard board = new ChessBoard(chessGrid);
+        }
+
+
+        private void Cell_Click(object sender, RoutedEventArgs e)
+        {
+            // Обработка события при нажатии на клетку
         }
 
         private void GoBack_Click(object sender, RoutedEventArgs e)
